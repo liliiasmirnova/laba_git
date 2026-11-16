@@ -1,3 +1,5 @@
-# App config (TEST DATA ONLY)
-GH_TOKEN = "ghp_2H50uP4EcghiwFpgXNEt5uHwqwxoNEnUhARh"
+import os
+
+# Token is read from the environment, never stored in code
+GH_TOKEN = os.environ.get("GH_TOKEN", "")
 DEBUG = True
