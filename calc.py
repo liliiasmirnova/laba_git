@@ -10,3 +10,6 @@ def mul(a, b):
 def div(a, b):
     return a / b if b!= 0 else None
 
+
+def pow_(a, b):
+    return a ** b
