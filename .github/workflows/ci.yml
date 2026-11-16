@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Scan files for secrets
         run: |
           docker run --rm -v "$PWD:/repo" trufflesecurity/trufflehog:latest \
